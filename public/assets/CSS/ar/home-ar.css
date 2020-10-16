@@ -1,0 +1,631 @@
+
+.carousel-inner img {
+    width: 100%;
+    height: 600px;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    left: 45%;
+    top: 60px;
+    /* left: 15%; */
+    letter-spacing: 2px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #00003c;
+    font-weight: bold;
+    text-align: center;
+}
+.carousel-indicators .active {
+    background-color: #00013a;
+    opacity: 1;
+}
+div .slider-btn .btn-primary:hover {
+    background: #00013a !important;
+
+}
+.slider-btn{
+    padding-top: 20px;
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #00013a;
+    border-radius: 50%;
+    background-clip: padding-box;
+    /* border-top: 10px solid transparent; */
+    /* border-bottom: 10px solid transparent; */
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: right;
+    padding-left: 0;
+    margin-right: 32.5%;
+    margin-left: 32.5%;
+    list-style: none;
+}
+
+
+
+
+
+/* -----------------------------Programs---------------------------------- */
+
+/* img {
+    width: 100%;
+  } */
+
+
+/* a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #528cb3;
+} */
+
+section.team {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.grid {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    padding-left: 0;
+    font-size: 0;
+    text-align: center;
+}
+
+.grid figure {
+    margin: 0.1em;
+    width: 340px;
+    height: 400px;
+    background: #3085a3;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Common style */
+.grid figure img {
+    position: relative;
+    display: block;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+
+@media (max-width: 1260px) {
+    height: 270px;
+}
+}
+
+.grid figure figcaption {
+    color: #fff;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figcaption h2 {
+    text-transform: uppercase;
+    word-spacing: -0.15em;
+    font-weight: 300;
+    margin: 1em;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    margin: 1em;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+figure.effect-steve {
+    z-index: auto;
+    background: #000;
+}
+
+figure.effect-steve:before {
+    opacity: 0;
+}
+
+figure.effect-steve figcaption {
+    z-index: 1;
+}
+/* hna */
+figure.effect-steve img {
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: perspective(1000px) translate3d(0, 0, 0);
+    transform: perspective(1000px) translate3d(0, 0, 0);
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+figure.effect-steve h2,
+figure.effect-steve p {
+    background-color: rgba(0, 0, 15,0.6);
+    /* height: 52px; */
+}
+figure.effect-steve h2 {
+    position: absolute;
+    padding: 40px;
+    bottom: 0px;
+    width: 100%;
+}
+
+figure.effect-steve p {
+    margin-top: 1em;
+    padding: 0.5em;
+    font-weight: 800;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-steve:hover {
+    opacity: 1;
+}
+
+figure.effect-steve:hover img {
+    -webkit-transform: perspective(1000px) translate3d(0, 0, 21px);
+    transform: perspective(1000px) translate3d(0, 0, 21px);
+    background-color: rgb(0, 0, 15);
+    -webkit-transform: scale3d(1.1,1.1,1);
+    transform: scale3d(1.1,1.1,1);
+    opacity: 0.3;
+}
+
+figure.effect-steve:hover h2:before {
+    opacity: 0;
+}
+
+figure.effect-steve:hover p {
+    opacity: 1;
+    background: transparent;
+}
+
+.grid figure,
+figcaption,
+img {
+    z-index: 0;
+}
+
+.grid figure figcaption h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.grid figcaption p {
+    font-size: 16px;
+    font-weight: 200;
+    position: center;
+    bottom: 0;
+    margin: 0;
+    height: 50%;
+}
+
+figure:hover h2 {
+    background: transparent;
+    transition: transform 0.35s;
+    top: 40%;
+    transform: translateY(-2.5em);
+}
+
+
+/* ****************************Services*************************** */
+
+.home-services-div{
+    background-color: #f6f6f6;
+}
+
+
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 80px solid white;
+    margin: auto;
+}
+
+#triangle-up{
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid white;
+    margin: auto;
+    bottom: 0;
+}
+
+/* *************************************Service Slider************************************ */
+
+.carousel-inner-service-img {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0px 200px;
+    float: left;
+}
+
+.carousel-caption-service-text{
+    position: absolute;
+    right: 100px !important;
+    top: 0 !important;
+    letter-spacing: 2px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #00003c;
+    font-weight: bold;
+    text-align: right !important;
+    width: 45%;
+
+}
+
+
+.carousel-indicators-services{
+    position:absolute;
+    top:40%;
+    margin:auto;
+    height:20px;
+    right:auto; left:10px;
+    width:auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end !important;
+    padding-left: 0;
+    margin: 0px 0px 0px 100px  !important;
+    list-style: none;
+}
+.carousel-indicators-services li{
+    display:block; margin-bottom:5px;
+    background-color: #707070 !important;
+}
+.carousel-indicators-services .active {
+    background-color: #fff;
+    background-color: #707070 !important;
+    opacity: 1;
+}
+.carousel-inner-title-service {
+    font-size: 35px !important;
+}
+
+.service-see-more-btn{
+    float: right;padding: 25px;
+    color: #15b2f0 !important;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+
+/* *************************************Service Slider************************************ */
+
+/* *******************************************Country Info********************************************* */
+
+
+/* *******************************************Country Info********************************************* */
+
+
+/* ---------------------------------Responsive-------------------------------- */
+
+@media (min-width: 991px) {
+    .carousel-inner-title{
+        font-size: 46px;
+    }
+
+    .home-carousel-span{
+        color: #3b3730;
+        font-size: 20px !important;
+    }
+
+    .home-book-btn{
+        height: 60px;
+        background: #00013a;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+
+    }
+    .home-program-details{
+        color: #666465;
+        text-align: center;
+        margin: 0px 100px;
+    }
+
+    .home-service-head-line {
+        color: #00aeed;
+        text-align: center;
+     
+        font-size: 50px;
+        /* margin: 50px 0px 30px 0px; */
+        width: 10%;
+        border-bottom: 5px solid #00aeed;
+        display: inline-block;
+    }
+    .home-service-head-line-dots
+    {
+        color: #00aeed;
+        text-align: center;
+       
+        font-size: 50px;
+        /* margin: 50px 0px 30px 0px; */
+        width: 3%;
+        /* letter-spacing: 82px; */
+        border-bottom: 5px dashed #00aeed;
+        border-top: none;
+        display: inline-block;
+        margin-left: 5%;
+    }
+    .home-program-title{
+        color: #00aeed;
+        text-align: center;
+     
+        font-size: 50px;
+        margin: 50px 0px 30px 0px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .carousel-inner-title{
+        font-size: 25px;
+    }
+
+    .home-carousel-span{
+        color: #3b3730;
+        font-size: 15px;
+    }
+
+    .home-book-btn{
+        background: #00013a;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+
+    }
+    .home-program-details {
+        color: #666465;
+        text-align: center;
+        margin: 0px 50px;
+    }
+
+    .home-service-head-line {
+        display: none;
+    }
+    .home-service-head-line-dots
+    {
+        display: none;
+    }
+    .home-program-title{
+        color: #00aeed;
+        text-align: center;
+      
+        margin: 50px 0px 30px 0px;
+    }
+
+    .carousel-indicators-services {
+        position: absolute;
+        top: 50%;
+        margin: auto;
+        height: 20px;
+        /* right: -18px; */
+        left: auto;
+        width: auto;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        z-index: 15;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        padding-left: 0;
+        margin: 0px 0px 0px 0px !important;
+        list-style: none;
+    }
+    .carousel-inner-service-img {
+        width: 300px !important;
+        height: 300px !important;
+        margin: auto !important;
+        float: none !important;
+    }
+    .carousel-caption-service-text {
+        position: relative;
+        left: 50px !important;
+        letter-spacing: 2px;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #00003c;
+        font-weight: bold;
+        text-align: left !important;
+        width: 70%;
+        height: 300px;
+    }
+    .carousel-inner-title-service {
+        font-size: 20px !important;
+    }
+
+}
+
+/* ***************************************** */
+
+
+
+/* ----------------Country info 2----------------- */
+.card-img-top{
+    height: 300px !important;
+    width: 100% !important;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.card-country-container{
+    position: relative;
+    text-align: center;
+}
+.text-block-slider {
+    position: absolute;
+    bottom: 0px;
+    /* right: 20px; */
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    /* margin: 0px auto; */
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+
+.card{
+    border: none;
+}
+.carousel-indicators-multi{
+    justify-content: center !important;
+}
+
+.carousel-multi-item .carousel-indicators .active {
+    height: 1.25rem !important;
+    width: 1.25rem !important;
+    max-width: 1.25rem !important;
+}
+
+
+
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: transparent;
+    color: black;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+
+@media (min-width: 991px) {
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 400px;
+        perspective: 1000px;
+    }
+    #carousel-example-multi{
+        margin: 100px 100px !important;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: 400px;
+        perspective: 1000px;
+    }
+    #carousel-example-multi{
+        margin: 100px 0px !important;
+    }
+
+
+
+}
+
+
+.one-carousel{
+    margin: auto;
+  }
+
+  .double-carousel{
+    display: inline-block;
+    margin: 20px;
+  }
